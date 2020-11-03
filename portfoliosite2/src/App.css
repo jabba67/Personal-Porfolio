@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+
+#AboutMe{
+  padding-top: 10px;
+  background: white;
+}
+
+#Skills{
+  background: #2c6385;
+}
+
+#footer{
+  background:#474545;
+}
+
+.Footer{
+  color:#9dc4bd;
+  bottom:0;
+  left: 0;
+  right:0;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.sprite {
+  background-image: url(spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.sprite-ConvertThisToCss {
+  width: 812px;
+  height: 643px;
+  background-position: -5px -5px;
+}
+
+.sprite-github {
+  width: 30px;
+  height: 30px;
+  background-position: -5px -658px;
+}
+
+.sprite-gmail {
+  width: 30px;
+  height: 30px;
+  background-position: -45px -658px;
+}
+
+.sprite-linkedin {
+  width: 30px;
+  height: 30px;
+  background-position: -85px -658px;
+}
+
+.sprite-stackoverflow {
+  width: 30px;
+  height: 30px;
+  background-position: -125px -658px;
+}
+
+.sprite-tumblr {
+  width: 30px;
+  height: 30px;
+  background-position: -165px -658px;
+}
+
+.sprite-twitter {
+  width: 30px;
+  height: 30px;
+  background-position: -205px -658px;
+}
