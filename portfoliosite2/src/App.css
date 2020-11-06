@@ -13,7 +13,7 @@
   color: white;
 }
 
-a{
+a:hover{
   text-decoration: line-through;
   text-emphasis-color: white;
 }

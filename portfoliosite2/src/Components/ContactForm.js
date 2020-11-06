@@ -1,6 +1,25 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import { faMobile } from "@fortawesome/free-solid-svg-icons";
+import { faInbox } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import apikeys from './apikeys'
 
 function ContactForm(){
+
+    const onSubmit=(e)=>{
+        e.preventDefault()// Prevents default refresh by the browser
+        emailjs.sendForm('service_x8jefg2', 'template_f14q5rs', e.target, 'user_N7zbqh9EM8xnepB7Ne1IS')
+        .then(result => {
+        alert('Message Sent, I\'ll get back to you shortly', result.text);
+        },
+        error => {
+        alert( 'An error occured, Plese try again',error.text)
+        })
+        }
+
     return(
     <div>
         <title>Contact Us</title>
@@ -13,28 +32,35 @@ function ContactForm(){
                 <div class="col-lg-6 left-column">
                     <div class="tittle-container text-center">
                         <h2 class="tittle">Get in Touch</h2>
-                        <h4 class="subtitle">We'd love hear from you</h4>
+                        <h4 class="subtitle">I would love hear from you</h4>
                     </div>
                     {/*Form*/}
                            {/*Name*/}
+                           <form className="form" onSubmit={onSubmit}>
                             <div class="form-group row">
                                 <label class="col-lg-4 col-form-label">Your Name</label>
                                 <div class="col-lg-8">
-                                    <input type="text" name="name" class="form-control form-control-sm"/>
+                                    <input type="text" name="name" placeholder="Name" style={{width: "320px"}} class="form-control form-control-sm" className="form_input"/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-4 col-form-label">Your Phone Number</label>
+                                <div class="col-lg-8">
+                                    <input type="tel" placeholder="Phone" name="Phone" style={{width: "320px"}} class="form-control form-control-sm" className="form_input"/>
                                 </div>
                             </div>
                            {/*Email*/}
                             <div class="form-group row">
-                                <label class="col-lg-4 col-form-label">Email Adress</label>
+                                <label class="col-lg-4 col-form-label">Email Address</label>
                                 <div class="col-lg-8">
-                                    <input type="email" name="email" class="form-control form-control-sm"/>
+                                    <input type="email" placeholder="Email" name="email" style={{width: "320px"}} class="form-control form-control-sm" className="form_input"/>
                                 </div>
                             </div>
                            {/*Message*/}
                             <div class="form-group row">
                                 <label class="col-lg-4 col-form-label">Message</label>
                                 <div class="col-lg-8">
-                                    <textarea class="form-control form-control-sm" name="message" rows="5" required></textarea>
+                                    <textarea class="form-control form-control-sm"  name="message" rows="5" required></textarea>
                                 </div>
                                     
                             </div>
@@ -42,6 +68,7 @@ function ContactForm(){
                             <div class="text-right">
                                 <input class="btn btn-submit" type="submit" value="Submit"/>
                             </div>
+                            </form>
                 </div>
                 {/*End Left Coloumn*/}
 
@@ -50,16 +77,17 @@ function ContactForm(){
                      {/*Company Info*/}
                     <div class="contact-info">
                     <h3>Contact Info</h3>
-                        <p><i class="fas fa-map-marker-alt"></i>&nbsp; 80 Guild Street, London, N7 8EP</p>
-                        <p><i class="fas fa-phone-alt"></i>&nbsp; +44 7700 900041</p>
-                        <p><i class="fas fa-envelope"></i>&nbsp; support@example.com</p>
+                        <p><FontAwesomeIcon icon={faMapMarkerAlt}/> San Diego</p>
+                        <p><FontAwesomeIcon icon={faMobile}/> +1 (858)-342-0865</p>
+                        <p><FontAwesomeIcon icon={faInbox}/> tyler.rubin67@yahoo.com</p>
+                        <p><FontAwesomeIcon icon={faLinkedinIn}/><a style={{color: "lightgreen"}} href="https://www.linkedin.com/in/tyler-rubin/"> https://www.linkedin.com/in/tyler-rubin/</a></p>
+                        
                     </div>
                   {/*Social Icons*/}
                     <div class="social">
                         <div class="text-center center-block">
-                            <a href="#"><i class="icon fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="icon fab fa-twitter"></i></a>
-                            <a href="#"><i class="icon fab fa-linkedin-in"></i></a>
+                            {/*<a href="#"><i class="icon fab fa-twitter"></i></a>
+                            <a href="#"><i class="icon fab fa-linkedin-in"></i></a>*/}
                         </div>
                     </div>
                 </div>
