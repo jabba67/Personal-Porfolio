@@ -1,22 +1,34 @@
 import React from 'react'
+import Navbar from './Navbar';
 import '../App.css';
 
 export default function Welcome() {
     return (
-        <div>
-            <div id = "WelcomeSection">
-                <center>
-                <h1>Tyler Rubin</h1>
-                <div className="WelcomeSubTitle">Designer • Developer</div>
-                <div class="grid-container">
-                    <div class="grid-item"><div className="skillIcon"><img src="https://www.flaticon.com/svg/static/icons/svg/984/984196.svg"/></div></div>
-                    <div class="grid-item"><div className="skillIcon"><img src="https://www.flaticon.com/svg/static/icons/svg/984/984196.svg"/></div></div>
-                    <div class="grid-item"><div className="skillIcon"><img src="https://www.flaticon.com/svg/static/icons/svg/984/984196.svg"/></div></div>  
-                    {/* Test Animation<div class="grid-item"><img height={300} width={500} class="clip-animation" src="https://www.carscoops.com/wp-content/uploads/2019/12/nissan-gt-r-liberty-walk-tuning-0.jpg"></img></div>*/} 
+        <div>  
+            <header>
+            <div class="overlay"></div>
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4"/>
+            </video>
+            <div class="container">
+                <div class="text-center align-items-center"><Navbar/>
+                    <div class="WelcomeTitle">Tyler Rubin
+                    <h3>"Be Relentless in Pursuit of Success"</h3></div>
+                    <div className="WelcomeSubTitle">Designer • Developer</div>
                     
                 </div>
-                </center>
+                <div class="d-flex h-100 text-center align-items-center">
+                    <div class="w-100 text-white">
+                        <div className = "headerText">
+                            Solving Unique Problems with Unique Solutions
+                            <h5>Contact me to Learn More</h5>
+                            {/*<button>Contact</button>*/}
+                        </div>
+                    </div>
+                </div>
+                
             </div>
+            </header>
         </div>
     )
 }

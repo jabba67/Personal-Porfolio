@@ -4,6 +4,7 @@ import AboutMe from './Components/AboutMe';
 import Skills from './Components/Skills';
 import ContactForm from './Components/ContactForm';
 import Footer from './Components/Footer';
+import ScrollArrow from './Components/Utilities/ScrollingWrapper';
 import './App.css';
 
 export default class App extends React.Component{
@@ -16,6 +17,7 @@ export default class App extends React.Component{
         <Skills/>
         <ContactForm/>
         <Footer/>
+        <ScrollArrow/>
       </div>
     );
   }
