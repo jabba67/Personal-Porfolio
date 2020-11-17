@@ -163,8 +163,8 @@ margin: 0px auto 25px;
 .profile-pic {
   object-fit: cover;
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
 }
 
 /* ==================================
@@ -183,7 +183,7 @@ margin: 0px auto 25px;
 ================================== */
 
 #footer{
-  background:#474545;
+  background:#212121;
   padding: 15px;
 }
 
