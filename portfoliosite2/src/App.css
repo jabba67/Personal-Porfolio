@@ -67,6 +67,11 @@ button{
   border: none;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   box-shadow: 0 0 6px 0 hsla(0, 0%, 0%, 0.712);
+  transition-duration: 0.5s;
+}
+
+button:hover {
+  background-color: lightgreen;
 }
 
 header{

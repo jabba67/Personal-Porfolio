@@ -23,7 +23,7 @@ export default function Welcome() {
                             Solving Unique Problems with Unique Solutions
                             {/*<button>Contact</button>*/}
                         </div>
-                        <button style={{"font-size":"20px"}} className="learnMoreButton">Learn More</button>
+                        <button style={{"font-size":"20px", "border-radius": "8px"}} className="learnMoreButton">Learn More</button>
                     </div>
                 </div>
                 
