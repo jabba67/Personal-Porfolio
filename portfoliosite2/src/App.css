@@ -41,6 +41,7 @@ a:hover{
 }
 
 .WelcomeTitle{
+  padding-top: 15px;
   color:white;
   font-weight: bold;
   font-size: 65px;
@@ -55,7 +56,17 @@ a:hover{
 }
 
 .headerText{
-  font-size: 65px;
+  font-size: 75px;
+}
+
+button{
+  background-color: #6e91ff;
+  color: white;
+  padding: 15px 32px;
+  display: inline-block;
+  border: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-shadow: 0 0 6px 0 hsla(0, 0%, 0%, 0.712);
 }
 
 header{
@@ -109,40 +120,6 @@ header .overlay {
   }
 }
 
-.grid-container {
-display: grid;
-grid-template-columns: auto auto auto;
-/*background-color: #2196F3;*/
-padding: 10px;
-}
-
-.grid-item {
-/*background-color: rgba(255, 255, 255, 0.8);*/
-/*border: 1px solid rgba(0, 0, 0, 0.8);*/
-padding: 20px;
-/*font-size: 30px;*/
-/*text-align: center;*/
-}
-
-.iconColored{
-background-color: white; /* defines the background color of the image */
-mask: url(https://www.flaticon.com/svg/static/icons/svg/984/984196.svg);/* no-repeat center / contain;*/
--webkit-mask: url(https://www.flaticon.com/svg/static/icons/svg/984/984196.svg);/* no-repeat center / contain;*/
-}
-
-.skillIcon img{
-background-color: transparent;
-margin-top: 0;
-position: relative;
-top: 20px;
-z-index: 20;
-display: block;
-text-align: center;
-width: 110px;
-height: 60px;
-margin: 0px auto 25px;
-}
-
 /* ==================================
   About Me
 ================================== */
@@ -150,6 +127,11 @@ margin: 0px auto 25px;
 #AboutMe{
   padding: 40px;
   background: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.aboutMeTitle{
+  font-size: 65px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -163,8 +145,17 @@ margin: 0px auto 25px;
 .profile-pic {
   object-fit: cover;
   border-radius: 50%;
-  height: 300px;
-  width: 300px;
+  height: 350px;
+  width: 350px;
+  box-shadow: 0 0 6px 0 hsla(0, 0%, 0%, 0.712);
+}
+
+.Bio{
+  width:80vh;
+  height: auto;
+  margin: 15px auto;
+  display: table;
+  vertical-align: middle
 }
 
 /* ==================================
@@ -173,74 +164,88 @@ margin: 0px auto 25px;
 
 #Skills{
   background: #6e91ff;
-  padding: 30px;
+  padding: 40px;
   color:white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* ==================================
-  Footer
-================================== */
-
-#footer{
-  background:#212121;
-  padding: 15px;
+.skillsTitle{
+  padding-bottom:20px;
+  font-size: 65px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:white;
 }
 
-.Footer{
-  color:whitesmoke;
-  bottom:0;
-  left: 0;
-  right:0;
-}
-
-/* ==================================
-  Utilities
-================================== */
-
-.scrollTop {
-  position: fixed; 
-  width: 100%;
-  bottom: 20px;
-  left:190vh;
-  align-items: center;
-  height: 50px;
-  justify-content: right;
-  z-index: 1000;
-  cursor: pointer;
-  animation: fadeIn 0.3s;
-  transition: opacity 0.4s;
-  opacity: 0.8;
+.grid-container-skills {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 120px 120px;
   padding: 20px;
 }
 
-.scrollTop:hover{
-  opacity: 1;
+.Texticon{
+  display: inline-block;
+  color:White;
+  font-weight: bold;
+  font-size:58px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.5;
-  }
+.skillDescription{
+  padding-top: 20px;
 }
 
-
-/* ====== Testing Area ======  */
+.IconAttr{
+  border-bottom: 10px 1px solid white;
+}
 
 /* ==================================
-  Container
+  Projects
+================================== */
+
+#Projects{
+  padding: 40px;
+  color:black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.projectsTitle{
+  padding-bottom:20px;
+  font-size: 65px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:black;
+}
+
+.grid-container-projects{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  padding: 20px;
+}
+
+.card{
+  height:300px;
+  width: 300px;
+  border: #212121;
+}
+
+/* ==================================
+Contact Form
+================================== */
+
+/* ==================================
+          Container
 ================================== */
 
 .container {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 50px;
 }
 
 /* ==================================
-  Left Column
+          Left Column
 ================================== */
 
 .left-column {
@@ -303,7 +308,7 @@ margin: 0px auto 25px;
 }
 
 /* ==================================
-  Right Column
+          Right Column
 ================================== */
 
 .right-column {
@@ -337,7 +342,7 @@ margin: 0px auto 25px;
 }
 
 /* ==================================
-  Responsive
+          Responsive
 ================================== */
 
 @media screen and (max-width: 576px) {
@@ -349,6 +354,55 @@ margin: 0px auto 25px;
 
 * {
   box-sizing: border-box;
+}
+
+/* ==================================
+  Footer
+================================== */
+
+#footer{
+  background:#212121;
+  padding: 15px;
+}
+
+.Footer{
+  color:whitesmoke;
+  bottom:0;
+  left: 0;
+  right:0;
+}
+
+/* ==================================
+  Utilities
+================================== */
+
+.scrollTop{
+  position: fixed; 
+  width: 100%;
+  bottom: 20px;
+  left:190vh;
+  align-items: center;
+  height: 50px;
+  justify-content: right;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.8;
+  padding: 20px;
+}
+
+.scrollTop:hover{
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }
 
 

@@ -21,9 +21,9 @@ export default function Welcome() {
                     <div class="w-100 text-white">
                         <div className = "headerText">
                             Solving Unique Problems with Unique Solutions
-                            <h5>Contact me to Learn More</h5>
                             {/*<button>Contact</button>*/}
                         </div>
+                        <button style={{"font-size":"20px"}} className="learnMoreButton">Learn More</button>
                     </div>
                 </div>
                 

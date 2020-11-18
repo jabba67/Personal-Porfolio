@@ -32,7 +32,7 @@ function ContactForm(){
                 <div class="col-lg-6 left-column">
                     <div class="tittle-container text-center">
                         <h2 class="tittle">Get in Touch</h2>
-                        <h4 class="subtitle">I would love hear from you</h4>
+                        <h4 class="subtitle">I would love to hear from you</h4>
                     </div>
                     {/*Form*/}
                            {/*Name*/}
