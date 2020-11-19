@@ -22,6 +22,21 @@ a:hover{
   Welcome Section
 ================================== */
 
+/* Navbar */
+.navbar{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+}
+
+.navbar a{
+  color:white;
+}
+
+.navbar a:hover{
+  color: #6e91ff;
+  text-decoration: overline;
+}
+
 #WelcomeSection{
   background-color: rgba(0, 0, 0, 0);
   background-repeat: no-repeat;
@@ -31,65 +46,110 @@ a:hover{
   height: 100vh;
   visibility: inherit;
   padding:50px;
+  color:white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.WelcomeTitle{
+  padding-top: 25vh;
+  color:white;
+  font-weight: bold;
+  font-size: 80px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .WelcomeSubTitle{
   color:#6e91ff;
   font-weight: bold;
   font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.grid-container {
-display: grid;
-grid-template-columns: auto auto auto;
-/*background-color: #2196F3;*/
-padding: 10px;
+.headerText{
+  font-size: 64px;
 }
 
-.grid-item {
-/*background-color: rgba(255, 255, 255, 0.8);*/
-/*border: 1px solid rgba(0, 0, 0, 0.8);*/
-padding: 20px;
-/*font-size: 30px;*/
-/*text-align: center;*/
+
+.headerSubText{
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 10px;
 }
 
-.iconColored{
-background-color: white; /* defines the background color of the image */
-mask: url(https://www.flaticon.com/svg/static/icons/svg/984/984196.svg);/* no-repeat center / contain;*/
--webkit-mask: url(https://www.flaticon.com/svg/static/icons/svg/984/984196.svg);/* no-repeat center / contain;*/
+.scroll-animation__mask-animation.active{
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 1.2s cubic-bezier(0,.56,.1,1),opacity .05s linear;
 }
 
-.skillIcon img{
-background-color: transparent;
-margin-top: 0;
-position: relative;
-top: 20px;
-z-index: 20;
-display: block;
-text-align: center;
-width: 110px;
-height: 60px;
-margin: 0px auto 25px;
+button{
+  background-color: transparent;
+  border:  1px solid white;
+  color: white;
+  padding: 10px 28px;
+  display: inline-block;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-shadow: 0 0 6px 0 hsla(0, 0%, 0%, 0.712);
+  transition-duration: 0.5s;
 }
 
-.clip-animation { 
-clip-path: polygon(100% 50%,84.70057014808336% 54.5684167277018%,91.0518476172854% 60.99980941685713%,82.33578363789503% 63.39392013277814%,93.30127018922194% 75%,77.76736691019323% 71.30665001530522%,80.05203820042827% 80.05203820042827%,71.30665001530522% 77.76736691019323%,75% 93.30127018922192%,63.39392013277814% 82.33578363789503%,60.99980941685714% 91.0518476172854%,54.56841672770181% 84.70057014808336%,50% 100%,45.4315832722982% 84.70057014808336%,39.000190583142874% 91.0518476172854%,36.606079867221865% 82.33578363789505%,25.00000000000001% 93.30127018922194%,28.693349984694787% 77.76736691019323%,19.947961799571733% 80.05203820042827%,22.23263308980677% 71.30665001530522%,6.698729810778076% 75.00000000000001%,17.664216362104966% 63.39392013277815%,8.948152382714603% 60.99980941685715%,15.299429851916635% 54.568416727701816%,0% 50.00000000000001%,15.299429851916635% 45.431583272298205%,8.94815238271459% 39.00019058314288%,17.66421636210496% 36.60607986722188%,6.698729810778062% 25.000000000000014%,22.23263308980676% 28.693349984694787%,19.947961799571715% 19.947961799571747%,28.69334998469477% 22.232633089806775%,24.99999999999998% 6.698729810778083%,36.60607986722184% 17.664216362104973%,39.00019058314284% 8.948152382714603%,45.43158327229816% 15.299429851916642%,49.99999999999999% 0%,54.568416727701795% 15.299429851916635%,60.99980941685711% 8.94815238271459%,63.39392013277812% 17.66421636210496%,74.99999999999997% 6.6987298107780475%,71.3066500153052% 22.23263308980675%,80.05203820042826% 19.947961799571722%,77.76736691019323% 28.69334998469477%,93.30127018922192% 24.99999999999998%,82.33578363789502% 36.60607986722184%,91.0518476172854% 39.00019058314283%,84.70057014808336% 45.43158327229816%)}
-
-.clip-animation { 
-animation: clip 1s infinite
+button:hover {
+  /*background-color:#6e91ff;*/
+  color:#6e91ff;
+  border:  1px solid #6e91ff;
+  transform:translatey(-5px);
+  box-shadow:0 0 6px 0 black;
 }
 
-@keyframes clip {
-0% {
-  clip-path: polygon(100% 50%,84.70057014808336% 54.5684167277018%,91.0518476172854% 60.99980941685713%,82.33578363789503% 63.39392013277814%,93.30127018922194% 75%,77.76736691019323% 71.30665001530522%,80.05203820042827% 80.05203820042827%,71.30665001530522% 77.76736691019323%,75% 93.30127018922192%,63.39392013277814% 82.33578363789503%,60.99980941685714% 91.0518476172854%,54.56841672770181% 84.70057014808336%,50% 100%,45.4315832722982% 84.70057014808336%,39.000190583142874% 91.0518476172854%,36.606079867221865% 82.33578363789505%,25.00000000000001% 93.30127018922194%,28.693349984694787% 77.76736691019323%,19.947961799571733% 80.05203820042827%,22.23263308980677% 71.30665001530522%,6.698729810778076% 75.00000000000001%,17.664216362104966% 63.39392013277815%,8.948152382714603% 60.99980941685715%,15.299429851916635% 54.568416727701816%,0% 50.00000000000001%,15.299429851916635% 45.431583272298205%,8.94815238271459% 39.00019058314288%,17.66421636210496% 36.60607986722188%,6.698729810778062% 25.000000000000014%,22.23263308980676% 28.693349984694787%,19.947961799571715% 19.947961799571747%,28.69334998469477% 22.232633089806775%,24.99999999999998% 6.698729810778083%,36.60607986722184% 17.664216362104973%,39.00019058314284% 8.948152382714603%,45.43158327229816% 15.299429851916642%,49.99999999999999% 0%,54.568416727701795% 15.299429851916635%,60.99980941685711% 8.94815238271459%,63.39392013277812% 17.66421636210496%,74.99999999999997% 6.6987298107780475%,71.3066500153052% 22.23263308980675%,80.05203820042826% 19.947961799571722%,77.76736691019323% 28.69334998469477%,93.30127018922192% 24.99999999999998%,82.33578363789502% 36.60607986722184%,91.0518476172854% 39.00019058314283%,84.70057014808336% 45.43158327229816%);
+header{
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 
+
+header video{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
-50% {
-  clip-path: polygon(84.70057014808336% 54.5684167277018%,91.0518476172854% 60.99980941685713%,82.33578363789503% 63.39392013277814%,93.30127018922194% 75%,77.76736691019323% 71.30665001530522%,80.05203820042827% 80.05203820042827%,71.30665001530522% 77.76736691019323%,75% 93.30127018922192%,63.39392013277814% 82.33578363789503%,60.99980941685714% 91.0518476172854%,54.56841672770181% 84.70057014808336%,50% 100%,45.4315832722982% 84.70057014808336%,39.000190583142874% 91.0518476172854%,36.606079867221865% 82.33578363789505%,25.00000000000001% 93.30127018922194%,28.693349984694787% 77.76736691019323%,19.947961799571733% 80.05203820042827%,22.23263308980677% 71.30665001530522%,6.698729810778076% 75.00000000000001%,17.664216362104966% 63.39392013277815%,8.948152382714603% 60.99980941685715%,15.299429851916635% 54.568416727701816%,0% 50.00000000000001%,15.299429851916635% 45.431583272298205%,8.94815238271459% 39.00019058314288%,17.66421636210496% 36.60607986722188%,6.698729810778062% 25.000000000000014%,22.23263308980676% 28.693349984694787%,19.947961799571715% 19.947961799571747%,28.69334998469477% 22.232633089806775%,24.99999999999998% 6.698729810778083%,36.60607986722184% 17.664216362104973%,39.00019058314284% 8.948152382714603%,45.43158327229816% 15.299429851916642%,49.99999999999999% 0%,54.568416727701795% 15.299429851916635%,60.99980941685711% 8.94815238271459%,63.39392013277812% 17.66421636210496%,74.99999999999997% 6.6987298107780475%,71.3066500153052% 22.23263308980675%,80.05203820042826% 19.947961799571722%,77.76736691019323% 28.69334998469477%,93.30127018922192% 24.99999999999998%,82.33578363789502% 36.60607986722184%,91.0518476172854% 39.00019058314283%,84.70057014808336% 45.43158327229816%,100% 50%);
+
+header .container {
+  position: relative;
+  z-index: 2;
+  height:70%;
 }
-  100% {
-  clip-path: polygon(91.0518476172854% 60.99980941685713%,82.33578363789503% 63.39392013277814%,93.30127018922194% 75%,77.76736691019323% 71.30665001530522%,80.05203820042827% 80.05203820042827%,71.30665001530522% 77.76736691019323%,75% 93.30127018922192%,63.39392013277814% 82.33578363789503%,60.99980941685714% 91.0518476172854%,54.56841672770181% 84.70057014808336%,50% 100%,45.4315832722982% 84.70057014808336%,39.000190583142874% 91.0518476172854%,36.606079867221865% 82.33578363789505%,25.00000000000001% 93.30127018922194%,28.693349984694787% 77.76736691019323%,19.947961799571733% 80.05203820042827%,22.23263308980677% 71.30665001530522%,6.698729810778076% 75.00000000000001%,17.664216362104966% 63.39392013277815%,8.948152382714603% 60.99980941685715%,15.299429851916635% 54.568416727701816%,0% 50.00000000000001%,15.299429851916635% 45.431583272298205%,8.94815238271459% 39.00019058314288%,17.66421636210496% 36.60607986722188%,6.698729810778062% 25.000000000000014%,22.23263308980676% 28.693349984694787%,19.947961799571715% 19.947961799571747%,28.69334998469477% 22.232633089806775%,24.99999999999998% 6.698729810778083%,36.60607986722184% 17.664216362104973%,39.00019058314284% 8.948152382714603%,45.43158327229816% 15.299429851916642%,49.99999999999999% 0%,54.568416727701795% 15.299429851916635%,60.99980941685711% 8.94815238271459%,63.39392013277812% 17.66421636210496%,74.99999999999997% 6.6987298107780475%,71.3066500153052% 22.23263308980675%,80.05203820042826% 19.947961799571722%,77.76736691019323% 28.69334998469477%,93.30127018922192% 24.99999999999998%,82.33578363789502% 36.60607986722184%,91.0518476172854% 39.00019058314283%,84.70057014808336% 45.43158327229816%,100% 50%,84.70057014808336% 54.5684167277018%);
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 1;
 }
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
 }
 
 /* ==================================
@@ -97,8 +157,46 @@ animation: clip 1s infinite
 ================================== */
 
 #AboutMe{
-  padding: 30px;
+  padding: 40px;
   background: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.aboutMeTitle{
+  font-size: 65px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /*opacity: 0;
+  transform: translate(0, 10px);
+  transition: all 1s;*/
+}
+
+/*.aboutMeTitle:hover{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0);
+}*/
+
+.image-cropper {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  display: inline;
+}
+.profile-pic {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  box-shadow: 0 0 6px 0 hsla(0, 0%, 0%, 0.712);
+}
+
+.Bio{
+  width:80vh;
+  height: auto;
+  margin: 15px auto;
+  display: table;
+  vertical-align: middle
 }
 
 /* ==================================
@@ -107,38 +205,88 @@ animation: clip 1s infinite
 
 #Skills{
   background: #6e91ff;
-  padding: 30px;
+  padding: 40px;
+  color:white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.skillsTitle{
+  padding-bottom:20px;
+  font-size: 65px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:white;
+}
+
+.grid-container-skills {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 120px 120px;
+  padding: 20px;
+}
+
+.Texticon{
+  display: inline-block;
+  color:White;
+  font-weight: bold;
+  font-size:58px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.skillDescription{
+  padding-top: 20px;
+}
+
+.IconAttr{
+  border-bottom: 10px 1px solid white;
 }
 
 /* ==================================
-  Footer
+  Projects
 ================================== */
 
-#footer{
-  background:#474545;
-  padding: 15px;
+#Projects{
+  padding: 40px;
+  color:black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.Footer{
-  color:whitesmoke;
-  bottom:0;
-  left: 0;
-  right:0;
+.projectsTitle{
+  padding-bottom:20px;
+  font-size: 65px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:black;
 }
 
-/* ====== Testing Area ======  */
+.grid-container-projects{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  padding: 20px;
+}
+
+.card{
+  height:300px;
+  width: 300px;
+  border: #212121;
+}
 
 /* ==================================
-  Container
+Contact Form
+================================== */
+
+/* ==================================
+          Container
 ================================== */
 
 .container {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 50px;
 }
 
 /* ==================================
-  Left Column
+          Left Column
 ================================== */
 
 .left-column {
@@ -157,6 +305,7 @@ animation: clip 1s infinite
   font-family: 'Raleway', sans-serif;
   margin: 0 auto;
   color: #38436b; 
+  font-weight: bold;
 }
 
 .subtitle {
@@ -173,10 +322,6 @@ animation: clip 1s infinite
 /* Form */
 .col-form-label {
   font-size: 0.9rem;
-}
-
-.form-control-sm {
-  /*border-radius: 0;*/
 }
 
 /* Button */
@@ -200,7 +345,7 @@ animation: clip 1s infinite
 }
 
 /* ==================================
-  Right Column
+          Right Column
 ================================== */
 
 .right-column {
@@ -220,20 +365,11 @@ animation: clip 1s infinite
   font-family: 'Raleway', sans-serif;
   text-align: center;
   margin: 50px auto 30px auto;
-}
-
-/* Social Icons */
-.social {
-  color: #ffffff;
-}
-
-.iconn {
-  color: #ffffff;
-  margin: auto 10px;
+  font-weight: bold;
 }
 
 /* ==================================
-  Responsive
+          Responsive
 ================================== */
 
 @media screen and (max-width: 576px) {
@@ -245,6 +381,70 @@ animation: clip 1s infinite
 
 * {
   box-sizing: border-box;
+}
+
+/* ==================================
+  Footer
+================================== */
+
+#footer{
+  background:#212121;
+  padding: 15px;
+}
+
+.Footer{
+  color:whitesmoke;
+  bottom:0;
+  left: 0;
+  right:0;
+}
+
+/* ==================================
+  Utilities
+================================== */
+
+.scrollTop{
+  position: fixed; 
+  width: 100%;
+  bottom: 20px;
+  left:180vh;
+  align-items: center;
+  height: 50px;
+  justify-content: right;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.8;
+  padding: 20px;
+}
+
+.scrollTop:hover{
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* Fade In Text */
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(5vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
 
 
