@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import FadeInSection from './Utilities/FadeInText';
 import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import { faJs } from "@fortawesome/free-brands-svg-icons";
@@ -10,7 +11,7 @@ import '../App.css';
 export default function Skills() {
     return (
         <div>
-            <section id = "Skills">
+            <section id = "Skills"><div><FadeInSection>
             <div className="skillsTitle">My Skills</div>
             <div class="grid-container-skills"> 
                 <div style={{"borderBottom":"5px solid"}}>
@@ -39,7 +40,7 @@ export default function Skills() {
                 <div className="skillDescription">C Sharp / Linq</div>
                 <div className="skillDescription">SQL</div>
             </div>
-            </section>
+            </FadeInSection></div></section>
         </div>
     )
 }

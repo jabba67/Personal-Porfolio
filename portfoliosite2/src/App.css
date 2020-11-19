@@ -29,11 +29,11 @@ a:hover{
 }
 
 .navbar a{
-  color: #6e91ff;
+  color:white;
 }
 
 .navbar a:hover{
-  color:white;
+  color: #6e91ff;
   text-decoration: overline;
 }
 
@@ -51,10 +51,10 @@ a:hover{
 }
 
 .WelcomeTitle{
-  padding-top: 15px;
+  padding-top: 25vh;
   color:white;
   font-weight: bold;
-  font-size: 65px;
+  font-size: 80px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -69,19 +69,36 @@ a:hover{
   font-size: 64px;
 }
 
+
+.headerSubText{
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 10px;
+}
+
+.scroll-animation__mask-animation.active{
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 1.2s cubic-bezier(0,.56,.1,1),opacity .05s linear;
+}
+
 button{
-  background-color: #6e91ff;
+  background-color: transparent;
+  border:  1px solid white;
   color: white;
   padding: 10px 28px;
   display: inline-block;
-  border: none;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   box-shadow: 0 0 6px 0 hsla(0, 0%, 0%, 0.712);
   transition-duration: 0.5s;
 }
 
 button:hover {
-  background-color: lightgreen;
+  /*background-color:#6e91ff;*/
+  color:#6e91ff;
+  border:  1px solid #6e91ff;
+  transform:translatey(-5px);
+  box-shadow:0 0 6px 0 black;
 }
 
 header{
@@ -148,7 +165,16 @@ header .overlay {
 .aboutMeTitle{
   font-size: 65px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /*opacity: 0;
+  transform: translate(0, 10px);
+  transition: all 1s;*/
 }
+
+/*.aboutMeTitle:hover{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0);
+}*/
 
 .image-cropper {
   object-fit: cover;
@@ -404,6 +430,21 @@ Contact Form
   100% {
     opacity: 0.5;
   }
+}
+
+/* Fade In Text */
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(5vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
 
 

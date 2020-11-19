@@ -1,5 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+import FadeInSection from './Utilities/FadeInText';
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { faMobile } from "@fortawesome/free-solid-svg-icons";
 import { faInbox } from "@fortawesome/free-solid-svg-icons";
@@ -21,7 +22,7 @@ function ContactForm(){
         }
 
     return(
-    <div>
+    <div><div><FadeInSection>
         <title>Contact Us</title>
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet"></link>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></link>
@@ -94,7 +95,7 @@ function ContactForm(){
                {/* End Right Column*/}
             </div>
         </div>
-        </div>
+        </FadeInSection></div></div>
     );
 }
 

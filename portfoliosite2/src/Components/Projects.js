@@ -1,11 +1,11 @@
 import React from 'react'
-
+import FadeInSection from './Utilities/FadeInText';
 import '../App.css';
 
 export default function Projects() {
     return (
         <div>
-            <section id = "Projects">
+            <section id = "Projects"><div><FadeInSection>
             <div className="projectsTitle">Some of My Projects</div>
             <div class="grid-container-projects"> 
                 <div className="card">
@@ -42,7 +42,7 @@ export default function Projects() {
                     Test Here Test Here Test Here
                 </div>
             </div>
-            </section>
+            </FadeInSection></div></section>
         </div>
     )
 }
