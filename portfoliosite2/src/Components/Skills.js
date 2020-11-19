@@ -2,8 +2,8 @@ import React from 'react'
 import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import { faJs } from "@fortawesome/free-brands-svg-icons";
-import { faNpm } from "@fortawesome/free-brands-svg-icons";
-import { faDigitalOcean } from "@fortawesome/free-brands-svg-icons";
+// import { faNpm } from "@fortawesome/free-brands-svg-icons";
+// import { faDigitalOcean } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import '../App.css';
 

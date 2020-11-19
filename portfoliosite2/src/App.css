@@ -25,6 +25,16 @@ a:hover{
 /* Navbar */
 .navbar{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+}
+
+.navbar a{
+  color: #6e91ff;
+}
+
+.navbar a:hover{
+  color:white;
+  text-decoration: overline;
 }
 
 #WelcomeSection{
@@ -56,13 +66,13 @@ a:hover{
 }
 
 .headerText{
-  font-size: 75px;
+  font-size: 64px;
 }
 
 button{
   background-color: #6e91ff;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 28px;
   display: inline-block;
   border: none;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -112,7 +122,7 @@ header .overlay {
   height: 100%;
   width: 100%;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.6;
   z-index: 1;
 }
 
@@ -288,10 +298,6 @@ Contact Form
   font-size: 0.9rem;
 }
 
-.form-control-sm {
-  /*border-radius: 0;*/
-}
-
 /* Button */
 .btn-submit {
   text-align: center;
@@ -336,16 +342,6 @@ Contact Form
   font-weight: bold;
 }
 
-/* Social Icons */
-.social {
-  color: #ffffff;
-}
-
-.iconn {
-  color: #ffffff;
-  margin: auto 10px;
-}
-
 /* ==================================
           Responsive
 ================================== */
@@ -385,7 +381,7 @@ Contact Form
   position: fixed; 
   width: 100%;
   bottom: 20px;
-  left:190vh;
+  left:180vh;
   align-items: center;
   height: 50px;
   justify-content: right;

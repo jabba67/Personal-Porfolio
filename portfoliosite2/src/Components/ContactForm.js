@@ -16,7 +16,7 @@ function ContactForm(){
         alert('Message Sent, I\'ll get back to you shortly', result.text);
         },
         error => {
-        alert( 'An error occured, Plese try again',error.text)
+        alert( 'An error has occurred, Please try again',error.text)
         })
         }
 
@@ -70,7 +70,7 @@ function ContactForm(){
                             </div>
                             </form>
                 </div>
-                {/*End Left Coloumn*/}
+                {/*End Left Column*/}
 
                 {/*Right Column*/}
                 <div class="col-lg-4 right-column">
