@@ -10,8 +10,7 @@ export default function AboutMe() {
             <section id = "AboutMe">
             <div class ="image-cropper">
             <div><FadeInSection><div className="aboutMeTitle">About Me</div>
-            <div className="Bio"><p>Tyler is currently a freelance Full Stack Software Engineer, seeking a new opportunity as a Software Engineer at a great company.</p>
-
+            <div id className="Bio"><p>Tyler is currently a freelance Full Stack Software Engineer, seeking a new opportunity as a Software Engineer at a great company.</p>
             <p>Tyler's dream is to truly make a difference in the world with the code that he creates. He is experienced with C#, .Net Core, MySQL, and ReactJs and has a variety of skills that can be tailored to a team’s needs. He is a self-starter looking for fun and complex problems to solve with optimal and simple solutions. He also has competency to understand/apply modern concepts, technologies, languages & frameworks throughout a fluctuating environment.</p>
 
             <p>Tyler is continually learning and expanding his education, where he is currently studying for the AWS Cloud Essentials Certification, as well as learning UI/UX designs for web applications. You can find some of his projects at https://tylerrubin.live and https://titanbank-netlify.app</p>
