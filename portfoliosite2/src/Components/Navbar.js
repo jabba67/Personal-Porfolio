@@ -21,10 +21,10 @@ export default function Navbar() {
             <div className="navbar row-sm-3">
                 <div class="containerNav">
                         <ul>
-                            <li class="one"><a className="navLink" href="#" onClick={scrollAbout}>About</a></li>
-                            <li class="two"><a className="navLink" href="#" onClick={scrollSkills}>Skills</a></li>
-                            <li class="three"><a className="navLink" href="#" onClick={scrollProjects}>Projects</a></li>
-                            <li class="four"><a className="navLink" href="#" onClick={scrollContact}>Contact</a></li>
+                            <li class="one"><a className="navLink" href="/About" onClick={scrollAbout}>About</a></li>
+                            <li class="two"><a className="navLink" href="/Skills" onClick={scrollSkills}>Skills</a></li>
+                            <li class="three"><a className="navLink" href="/Projects" onClick={scrollProjects}>Projects</a></li>
+                            <li class="four"><a className="navLink" href="/Contacts" onClick={scrollContact}>Contact</a></li>
                             <hr className="hrNav" />
                         </ul>
                     </div>    
