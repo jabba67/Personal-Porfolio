@@ -5,7 +5,7 @@ import '../App.css';
 export default function Projects() {
     return (
         <div>
-            <section id = "Projects"><div><FadeInSection>
+            <section id = "Projects"><FadeInSection>
             <div className="projectsTitle">Some of My Projects</div>
             <div class="grid-container-projects"> 
                 <div className="card">
@@ -25,7 +25,7 @@ export default function Projects() {
                     Test Here Test Here Test Here
                 </div>
                 {/* ===== Row 2 ===== */}
-                <div className="card">
+                {/*<div className="card">
                     <h3>Title Here</h3>
                     Test Here Test Here Test Here
                 </div>
@@ -40,9 +40,9 @@ export default function Projects() {
                 <div className="card">
                     <h3>Title Here</h3>
                     Test Here Test Here Test Here
-                </div>
+                </div>*/}
             </div>
-            </FadeInSection></div></section>
+            </FadeInSection></section>
         </div>
     )
 }

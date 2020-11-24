@@ -5,3 +5,5 @@
 *.json
 *.csprojAssemblyReference.cache
 *.suo
+# Local Netlify folder
+.netlify
