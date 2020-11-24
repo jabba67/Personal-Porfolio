@@ -183,7 +183,7 @@ header .overlay {
 }
 
 .Bio{
-  width:80%;
+  width:80vh;
   height: auto;
   margin: 15px auto;
   display: table;
@@ -542,6 +542,13 @@ ul li {
 
     /* About Me */
 
+    .Bio{
+      width:80%;
+      height: auto;
+      margin: 15px auto;
+      display: table;
+      vertical-align: middle
+    }
     
     .profile-pic {
       object-fit: cover;
