@@ -81,7 +81,7 @@ function ContactForm(){
                         <p><FontAwesomeIcon icon={faMapMarkerAlt}/> San Diego</p>
                         <p><FontAwesomeIcon icon={faMobile}/> +1 (858)-342-0865</p>
                         <p><FontAwesomeIcon icon={faInbox}/> tyler.rubin67@yahoo.com</p>
-                        <p><FontAwesomeIcon icon={faLinkedinIn}/><a style={{color: "lightgreen"}} href="https://www.linkedin.com/in/tyler-rubin/"> https://www.linkedin.com/in/tyler-rubin/</a></p>
+                        <p><FontAwesomeIcon icon={faLinkedinIn}/> <a style={{color: "white", textDecoration:"underline",}} href="https://www.linkedin.com/in/tyler-rubin/">https://www.linkedin.com/in/tyler-rubin/</a></p>
                         
                     </div>
                   {/*Social Icons*/}

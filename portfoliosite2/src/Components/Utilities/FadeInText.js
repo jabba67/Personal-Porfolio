@@ -1,20 +1,23 @@
 import React, {useState, useRef, useEffect} from 'react';
 
 function FadeInSection(props) {
-    var [isVisible, setVisible] = useState(true);
+    var [isVisible, setVisible] = useState(false);
     const domRef = useRef();
+    var count = 0;
 
     useEffect(() => {
       const altDomRef = domRef.current;
-      const observer = new IntersectionObserver(entries => {
+      var observer = new IntersectionObserver(entries => {
         entries.forEach(entry => setVisible(entry.intersectionRatio > 0));
-      });
-      observer.observe(altDomRef);
+      },{threshold: .55});
+        observer.observe(altDomRef);
+      
+      
 
       return () => {
-          observer.disconnect(altDomRef);
+          observer.unobserve(altDomRef);
           }
-    }, []);
+    }, [count]);
 
     
     return (
